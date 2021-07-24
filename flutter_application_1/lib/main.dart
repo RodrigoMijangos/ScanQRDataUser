@@ -1,25 +1,19 @@
+import 'package:app_scanner_qr_data/providers/router_provider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/providers/ui_provider.dart';
-import 'package:provider/provider.dart';
-import 'pages/home_tab.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [ChangeNotifierProvider(create: (_) => new UiProvider())],
-      child: MaterialApp(
-        title: 'Provider',
-        initialRoute: 'home',
-        routes: {
-          'home': (_) => HomeTab(),
-        },
+     return MaterialApp(
+        title: 'Providers',
+        initialRoute: '/',
+        onGenerateRoute: RouterProvider.generateRoute,
         theme: ThemeData.dark(),
-      ),
-    );
+      );
   }
 }
