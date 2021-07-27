@@ -1,4 +1,4 @@
-import 'package:app_scanner_qr_data/providers/router_provider.dart';
+import '/providers/router_provider.dart';
 import 'package:flutter/material.dart';
 
 void main() {

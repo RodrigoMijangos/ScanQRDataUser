@@ -1,5 +1,5 @@
-import 'package:app_scanner_qr_data/pages/home.dart';
-import 'package:app_scanner_qr_data/pages/qr_data_viewer.dart';
+import '/pages/home.dart';
+import '/pages/qr_data_viewer.dart';
 import 'package:flutter/material.dart';
 
 class RouterProvider {

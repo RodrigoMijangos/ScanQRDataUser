@@ -1,4 +1,4 @@
-import 'package:app_scanner_qr_data/widgets/button_tab.dart';
+import '/widgets/button_tab.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget{
